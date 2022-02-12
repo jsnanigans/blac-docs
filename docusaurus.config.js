@@ -57,8 +57,13 @@ const config = {
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/jsnanigans/blac',
             label: 'GitHub',
+            position: 'right',
+          },
+          {
+            href: 'https://www.npmjs.com/package/blac',
+            label: 'npm',
             position: 'right',
           },
         ],
@@ -84,12 +89,12 @@ const config = {
               // },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/jsnanigans/blac',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `© ${new Date().getFullYear()} Brendan Mullins --- Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
