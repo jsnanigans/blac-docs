@@ -49,7 +49,7 @@ export default class CounterCubit extends Cubit<number> {
 ```
 
 ### Create a new *Blac* instance
-also export the `useBlac` hook for later use in the react component
+also export the `useBloc` hook for later use in the react component
 
 ```ts {5-7,9} title="src/state/state.ts"
 import { BlacReact } from 'blac';
@@ -60,11 +60,11 @@ const state = new BlacReact([
   new CounterCubit(0)
 ]);  
 
-export const { useBlac } = state;  
+export const { useBloc } = state;  
 ```
 
 ### Use the Cubit in react
-The simplest way to acess your state is with the `useBlac` hook, just reference the Cubit we created before.
+The simplest way to acess your state is with the `useBloc` hook, just reference the Cubit we created before.
 
 ```ts {6,7} title="src/components/Counter.tsx"
 import { useBloc } from 'src/state/state';
